@@ -18,7 +18,7 @@ In 2005, the relationship between the community that developed the Linux kernel 
 
 # What is Git?
 
-Git is the open source distributed version control system that facilitates GitHub activitieson your laptop or desktop.
+Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed,efficiency and that facilitates GitHub activitieson your laptop or desktop.
 
 # Installing Git
 
@@ -44,5 +44,6 @@ If you don’t have it installed already, it will prompt you to install it.
 **Installing on Windows**
 
 There are also a few ways to install Git on Windows. The most official build is available for download on the Git website. Just go to https://git-scm.com/download/win and the download will start automatically.
+
 
 
