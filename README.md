@@ -39,7 +39,7 @@ There are several ways to install Git on a Mac. The easiest is probably to insta
 >  git --version
 If you don’t have it installed already, it will prompt you to install it.
 
-<img src="https://raw.githubusercontent.com/harideep8/GitHub-Documentation/master/macgit.png?token=AMHRXDH53O72BLMF76GD4LK7HDYZU">
+<img src="https://git-scm.com/book/en/v2/images/git-osx-installer.png">
 
 **Installing on Windows**
 
