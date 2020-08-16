@@ -43,7 +43,7 @@ If you don’t have it installed already, it will prompt you to install it.
 
 **Installing on Windows**
 
-There are also a few ways to install Git on Windows. The most official build is available for download on the Git website. Just go to **https://git-scm.com/download/win** and the download will start automatically.
+There are also a few ways to install Git on Windows. The most official build is available for download on the Git website. Just go to                 **https://git-scm.com/download/win** and the download will start automatically.
 
 
 
