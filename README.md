@@ -23,19 +23,26 @@ Git is the open source distributed version control system that facilitates GitHu
 # Installing Git
 
 **Installing on Linux**
+
 If you want to install the basic Git tools on Linux via a binary installer, you can generally do so through the package management tool that comes with your distribution. If you’re on Fedora (or any closely-related RPM-based distribution, such as RHEL or CentOS), you can use dnf:
 
-> $ sudo dnf install git-all
+>  sudo dnf install git-all
 
 If you’re on a Debian-based distribution, such as Ubuntu, try apt:
 
-> $ sudo apt install git-all
+>  sudo apt install git-all
 
 **Installing on macOS**
+
 There are several ways to install Git on a Mac. The easiest is probably to install the Xcode Command Line Tools. On Mavericks (10.9) or above you can do this simply by trying to run git from the Terminal the very first time.
 
-> $ git --version
+>  git --version
 If you don’t have it installed already, it will prompt you to install it.
 
-<img src="">
+<img src="https://raw.githubusercontent.com/harideep8/GitHub-Documentation/master/macgit.png?token=AMHRXDADIOHNNBQKMBGNP6K7HDWZ4">
+
+**Installing on Windows**
+
+There are also a few ways to install Git on Windows. The most official build is available for download on the Git website. Just go to https://git-scm.com/download/win and the download will start automatically.
+
 
