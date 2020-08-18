@@ -29,6 +29,7 @@ If you want to install the basic Git tools on Linux via a binary installer, you 
 sudo dnf install git
 ```
 If you’re on a Debian-based distribution, such as Ubuntu, try apt:
+
 ```
 sudo apt-get install git
 ```
@@ -38,7 +39,8 @@ sudo apt-get install git
 
 There are several ways to install Git on a Mac. The easiest is probably to install the Xcode Command Line Tools. On Mavericks (10.9) or above you can do this simply by trying to run git from the Terminal the very first time.
 
-```git --version
+```
+git --version
 ```
 If you don’t have it installed already, it will prompt you to install it.
 
