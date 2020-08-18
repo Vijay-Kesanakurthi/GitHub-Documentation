@@ -52,5 +52,44 @@ There are also a few ways to install Git on Windows. The most official build is 
 
 <img src="https://phoenixnap.com/kb/wp-content/uploads/2019/12/download-git-for-windows.png">
 
+# Getting a Git Repository
+
+You typically obtain a Git repository in one of two ways:
+
+1. You can take a local directory that is currently not under version control, and turn it into a Git repository
+
+2. You can clone an existing Git repository from elsewhere.
+
+**Initializing a Repository in an Existing Directory**
+
+If you have a project directory that is currently not under version control and you want to start controlling it with Git,so lets create a repository i.e, my_folder. you first need to go to that project’s directory.Here we should had to initiliaze this repository with git.
+
+```
+git init
+```
+This creates a new subdirectory named .git that contains all of your necessary repository files — a Git repository skeleton. At this point, nothing in your project is tracked yet.Let's create some file like sample1.txt,sample2.txt after creating the files we should move these files to staging area and then commit.
+
+To add the particular files to staging area 
+
+```
+git add file name
+```
+
+TO add all files to staging area
+
+```
+git add .
+```
+
+After completion of staging area next we should had to commit the files
+
+```
+git commit -m "Commit Message"
+```
+
+
+
+
+
 
 
