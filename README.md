@@ -181,7 +181,42 @@ Date:   Sat Mar 15 10:31:28 2008 -0700
 By default, with no arguments, git log lists the commits made in that repository in reverse chronological order; that is, the most recent commits show up first. As you can see, this command lists each commit with its SHA-1 checksum, the author’s name and email, the date written, and the commit message.
 
 
+To check the log in reverse order
 
+```
+git log --oneline
+```
 
+**Changing a commit message**
+
+If a commit message contains unclear, incorrect, or sensitive information, you can amend it locally and push a new commit with a new message to GitHub. You can also change a commit message to add missing information.
+
+```
+git commit --amend -m "Commit Message"
+```
+
+**Delete the Commit**
+
+When working with Git you will find that sometimes commits need to be removed as they have introduced a bug or need to be reworked.
+
+If it is the last commit this is very straight forward. Simply run:
+```
+git reset HEAD^
+```
+This will pop off the latest commit but leave all of your changes to the files intact.
+
+If you need to delete more than just the last commit it is possible using rebase this will allow you to remove one or more consecutive commits 
+
+```
+Example git log
+Number	Hash	Commit Message	Author
+1	    2c6a45b	    (HEAD) Adding public method to access protected method	Tom
+2	    ae45fab    	Updates to database interface	Contractor 1
+3	    77b9b82	    Improving database interface	Contractor 2
+4	    3c9093c	    Merged develop branch into master	Tom
+5	    b3d92c5	    Adding new Event CMS Module	Paul
+6	    7feddbb	    Adding CMS class and files	Tom
+7	    a809379	    Adding project to Git	Tom
+```
 
 
