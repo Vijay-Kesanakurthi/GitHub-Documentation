@@ -86,6 +86,29 @@ After completion of staging area next we should had to commit the files
 ```
 git commit -m "Commit Message"
 ```
+**Cloning an Existing Repository**
+
+If you want to get a copy of an existing Git repository — for example, a project you’d like to contribute to — the command you need is git clone.This is an important distinction — instead of getting just a working copy, Git receives a full copy of nearly all data that the server has. Every version of every file for the history of the project is pulled down by default when you run git clone. In fact, if your server disk gets corrupted, you can often use nearly any of the clones on any client to set the server back to the state it was in when it was cloned (you may lose some server-side hooks and such, but all the versioned data would be there.
+
+You clone a repository with command:
+
+```
+git clone <url>
+```
+
+ For example, if you want to clone the Git linkable library called libgit2, you can do so like this:
+ 
+ ```
+ git clone https://github.com/libgit2/libgit2
+ ```
+ 
+ That creates a directory named libgit2, initializes a .git directory inside it, pulls down all the data for that repository, and checks out a working copy of the latest version. If you go into the new libgit2 directory that was just created, you’ll see the project files in there, ready to be worked on or used.
+
+If you want to clone the repository into a directory named something other than libgit2, you can specify the new directory name as an additional argument:
+```
+git clone https://github.com/libgit2/libgit2 mylibgit
+```
+That command does the same thing as the previous one, but the target directory is called mylibgit.
 
 
 
