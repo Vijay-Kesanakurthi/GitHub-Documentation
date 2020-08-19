@@ -137,7 +137,6 @@ Let’s say you add a new file to your project, a simple README file. If the fil
 touch README
 git status
 On branch master
-Your branch is up-to-date with 'origin/master'.
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
@@ -146,6 +145,8 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 You can see that your new README file is untracked, because it’s under the “Untracked files” heading in your status output. Untracked basically means that Git sees a file you didn’t have in the previous snapshot (commit); Git won’t start including it in your commit snapshots until you explicitly tell it to do so. It does this so you don’t accidentally begin including generated binary files or other files that you did not mean to include. You do want to start including README, so let’s start tracking the file.
+
+The files which are in untracked stage we should have to move those files to staging area which the commands is discussed earlier
 
 
 
