@@ -208,8 +208,12 @@ This will pop off the latest commit but leave all of your changes to the files i
 If you need to delete more than just the last commit it is possible using rebase this will allow you to remove one or more consecutive commits 
 
 ```
+git rebase --onto <branch name>~<first commit number to remove> <branch name>~<first commit to be kept> <branch name>
+```
+
+```
 Example git log
-Number	Hash	Commit Message	Author
+Number	Hash	      Commit Message	Author
 1	    2c6a45b	    (HEAD) Adding public method to access protected method	Tom
 2	    ae45fab    	Updates to database interface	Contractor 1
 3	    77b9b82	    Improving database interface	Contractor 2
@@ -218,5 +222,9 @@ Number	Hash	Commit Message	Author
 6	    7feddbb	    Adding CMS class and files	Tom
 7	    a809379	    Adding project to Git	Tom
 ```
+Using the git log above we want to remove the following commits; 2 & 3 (ae45fab & 77b9b82). 
 
+```
+git rebase --onto master~3 master~1 repair
+```
 
