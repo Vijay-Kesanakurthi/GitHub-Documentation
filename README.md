@@ -271,5 +271,43 @@ origin    git@github.com:mojombo/grit.git (fetch)
 origin    git@github.com:mojombo/grit.git (push)
 ```
 
+**Adding a remote**
 
+To Add a new remote to the repository
 
+```
+git remote add <shortname> <url>
+```
+
+**Send the files from local to remote repository**
+
+When you have your project at a point that you want to share, you have to push it upstream. The command for this is simple: 
+
+```
+git push <remote> <branch>
+```
+For Example my remote name is origin5 and branch is master so the command would be like this
+
+```
+git push origin5 master
+```
+If there are already some files present in the repository and if you are sending the files then your push will rightly be rejected.So, first you shouls have to synchronize the remote repository and local repository
+
+```
+git pull <remotename> <branch>
+```
+**Renaming and Removing Remotes**
+
+To rename any remote the command is
+
+```
+git remote rename <old remote name> <new remote name>
+```
+
+**Remove the remote**
+
+If you want to remove a remote for some reason — you’ve moved the server or are no longer using a particular mirror, or perhaps a contributor isn’t contributing anymore
+
+```
+git remote remove <remote name>
+```
