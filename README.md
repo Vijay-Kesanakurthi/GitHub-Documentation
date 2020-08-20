@@ -227,6 +227,20 @@ Using the git log above we want to remove the following commits; 2 & 3 (ae45fab 
 ```
 git rebase --onto master~3 master~1 repair
 ```
+**Checkout from one version to another version**
+
+Basically if you want to change from one version to another version it is possible with SHA(Secure Hash Algorithm) key, this key is generated when you make a commit.TO change the version the command we will use is:
+
+```
+git checkout <sha key>
+```
+
+Based on the above example 
+
+```
+git checkout b3d92c5
+```
+
 # Working with Remotes
 
 To be able to collaborate on any Git project, you need to know how to manage your remote repositories. Remote repositories are versions of your project that are hosted on the Internet or network somewhere. You can have several of them, each of which generally is either read-only or read/write for you. Collaborating with others involves managing these remote repositories and pushing and pulling data to and from them when you need to share work. Managing remote repositories includes knowing how to add remote repositories, remove remotes that are no longer valid, manage various remote branches and define them as being tracked or not, and more. In this section, we’ll cover some of these remote-management skills.
