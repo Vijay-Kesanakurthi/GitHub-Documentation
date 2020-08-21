@@ -364,3 +364,31 @@ git checkout testing
 This moves HEAD to point to the testing branch.
 
 <img src="https://git-scm.com/book/en/v2/images/head-to-testing.png">
+
+**Merge Branch**
+Merging is Git's way of putting a forked history back together again. The git merge command lets you take the independent lines of development created by git branch and integrate them into a single branch.
+
+To merge the branch first we should have to checkout that branch
+
+```
+git merge <branch name>
+```
+**Delete the Branch in local repository**
+
+To delete any branch without merging the command is
+
+```
+git branch -D <branch name>
+```
+
+To delete branch after merge
+
+```
+git branch -d <branch name>
+```
+
+To delete the branch in remote repository
+
+```
+git push <remote name> --delete <branch name>
+```
