@@ -482,3 +482,25 @@ First Header | Second Header
 Content from cell 1 | Content from cell 2
 Content in the first column | Content in the second column
 ```
+
+# GitHub Pages
+
+You can use GitHub Pages to host a website about yourself, your organization, or your project directly from a GitHub repository.GitHub Pages is a static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website.
+
+**Types of GitHub Pages sites**
+
+There are three types of GitHub Pages sites: project, user, and organization. Project sites are connected to a specific project hosted on GitHub, such as a JavaScript library or a recipe collection. User and organization sites are connected to a specific GitHub account.
+
+To publish a user site, you must create a repository owned by your user account that's named <user>.github.io. To publish an organization site, you must create a repository owned by an organization that's named <organization>.github.io. Unless you're using a custom domain, user and organization sites are available at http(s)://<username>.github.io or http(s)://<organization>.github.io.
+
+The source files for a project site are stored in the same repository as their project. Unless you're using a custom domain, project sites are available at http(s)://<user>.github.io/<repository> or http(s)://<organization>.github.io/<repository>.
+ 
+ You can only create one user or organization site for each GitHub account. Project sites, whether owned by an organization or a user account, are unlimited.
+ 
+ **Publishing sources for GitHub Pages sites**
+ 
+ The publishing source for your GitHub Pages site is the branch and folder where the source files for your site are stored.
+ 
+ The default publishing source for user and organization sites is the root of the default branch for the repository. The default publishing source for project sites is the root of the gh-pages branch. If the default publishing source exists in your repository, GitHub Pages will automatically publish a site from that source.
+
+If you want to keep the source files for your site in a different location, you can change the publishing source for your site. You can publish your site from any branch in the repository, either from the root of the repository on that branch, /, or from the /docs folder on that branch.
