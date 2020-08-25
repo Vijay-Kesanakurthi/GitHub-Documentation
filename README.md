@@ -184,6 +184,11 @@ By default, with no arguments, git log lists the commits made in that repository
 To check the log in reverse order
 
 ```
+git log --reverse
+```
+To check the log in short description
+
+```
 git log --oneline
 ```
 
