@@ -8,13 +8,10 @@ Welcome to Source Code Management Using Git & GitHub
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :numbered:
+   
+   README.md
 
 
 
-Indices and tables
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
